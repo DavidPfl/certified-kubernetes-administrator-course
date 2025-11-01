@@ -1,17 +1,14 @@
 # Certified Kubernetes Administrator (CKA) Course
 
-These are notes from the [Certified Kubernetes Administrator Course](https://kodekloud.com/courses/certified-kubernetes-administrator-cka/) hosted on KodeKloud.
+These are notes from the [Certified Kubernetes Administrator Course](https://kodekloud.com/courses/certified-kubernetes-administrator-cka/) hosted on KodeKloud, which I did on Udemy.
 
 # Sections
 
 - [01-Introduction](docs/01-Introduction)
-
   - [01-Course-Introduction](docs/01-Introduction/01-Course-Introduction.md)
   - [02-Certification](docs/01-Introduction/02-Certification.md)
 
-
 - [02-Core-Concepts](docs/02-Core-Concepts)
-
   - [01-Core-Concepts-Section-Introduction](docs/02-Core-Concepts/01-Core-Concepts-Section-Introduction.md)
   - [02-Cluster-Architecture](docs/02-Core-Concepts/02-Cluster-Architecture.md)
   - [03-Docker-vs-ContainerD](docs/02-Core-Concepts/03-Docker-vs-ContainerD.md)
@@ -39,7 +36,6 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [25-Attachments](docs/02-Core-Concepts/25-Attachments.md)
 
 - [03-Scheduling](docs/03-Scheduling)
-
   - [01-Scheduling-Section-Introduction](docs/03-Scheduling/01-Scheduling-Section-Introduction.md)
   - [02-Manual-Scheduling](docs/03-Scheduling/02-Manual-Scheduling.md)
   - [03-Practice-Test-Manual-Scheduling](docs/03-Scheduling/03-Practice-Test-Manual-Scheduling.md)
@@ -62,9 +58,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [20-Configuring-Kubernetes-Schedulers](docs/03-Scheduling/20-Configuring-Kubernetes-Schedulers.md)
   - [21-Download-Presentation-Deck](docs/03-Scheduling/21-Download-Presentation-Deck.md)
 
-
 - [04-Logging-and-Monitoring](docs/04-Logging-and-Monitoring)
-
   - [01-Logging-and-Monitoring-Section-Introduction](docs/04-Logging-and-Monitoring/01-Logging-and-Monitoring-Section-Introduction.md)
   - [02-Monitor-Cluster-Components](docs/04-Logging-and-Monitoring/02-Monitor-Cluster-Components.md)
   - [03-Practice-Test-Monitor-Cluster-Components](docs/04-Logging-and-Monitoring/03-Practice-Test-Monitor-Cluster-Components.md)
@@ -72,9 +66,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [05-Download-Presentation-Deck](docs/04-Logging-and-Monitoring/05-Download-Presentation-Deck.md)
   - [06-Practice-Test-Managing-Application-Logs](docs/04-Logging-and-Monitoring/06-Practice-Test-Managing-Application-Logs.md)
 
-
 - [05-Application-Lifecycle-Management](docs/05-Application-Lifecycle-Management)
-
   - [01-Application-Lifecycle-Management--Section-Introduction](docs/05-Application-Lifecycle-Management/01-Application-Lifecycle-Management--Section-Introduction.md)
   - [02-RollingUpdates-and-Rollback](docs/05-Application-Lifecycle-Management/02-RollingUpdates-and-Rollback.md)
   - [03-Practice-Test-RollingUpdates-Rollback](docs/05-Application-Lifecycle-Management/03-Practice-Test-RollingUpdates-Rollback.md)
@@ -94,9 +86,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [17.Self-Healing-Applications](docs/05-Application-Lifecycle-Management/17.Self-Healing-Applications.md)
   - [18.Download-Presentation-Deck](docs/05-Application-Lifecycle-Management/18.Download-Presentation-Deck.md)
 
-
 - [06-Cluster-Maintenance](docs/06-Cluster-Maintenance)
-
   - [01-Cluster-Maintenance-Section-Introduction](docs/06-Cluster-Maintenance/01-Cluster-Maintenance-Section-Introduction.md)
   - [02-OS-Upgrades](docs/06-Cluster-Maintenance/02-OS-Upgrades.md)
   - [03-Practice-Test-OS-Upgrades](docs/06-Cluster-Maintenance/03-Practice-Test-OS-Upgrades.md)
@@ -109,9 +99,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [10-Practice-Test-Backup-and-Restore-Methods 2](docs/06-Cluster-Maintenance/10-Practice-Test-Backup-and-Restore-Methods-2.md)
   - [11-Download-Presentation-Deck](docs/06-Cluster-Maintenance/11-Download-Presentation-Deck.md)
 
-
 - [07-Security](docs/07-Security)
-
   - [01-Security-Section-Introduction](docs/07-Security/01-Security-Section-Introduction.md)
   - [02-Kubernetes-Security-Primitives](docs/07-Security/02-Kubernetes-Security-Primitives.md)
   - [03-Authentication](docs/07-Security/03-Authentication.md)
@@ -141,9 +129,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [29-kubectx-and-kubens-commands](docs/07-Security/29-kubectx-and-kubens-commands.md)
   - [30-Download-Presentation-Deck](docs/07-Security/30-Download-Presentation-Deck.md)
 
-
 - [08-Storage](docs/08-Storage)
-
   - [01-Storage-Section-Introduction](docs/08-Storage/01-Storage-Section-Introduction.md)
   - [02-Introduction-to-Docker-Storage](docs/08-Storage/02-Introduction-to-Docker-Storage.md)
   - [03-Storage-in-Docker](docs/08-Storage/03-Storage-in-Docker.md)
@@ -158,9 +144,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [12-Storage-Class](docs/08-Storage/12-Storage-Class.md)
   - [13-Practice-Test-Storage-Class](docs/08-Storage/13-Practice-Test-Storage-Class.md)
 
-
 - [09-Networking](docs/09-Networking)
-
   - [01-Networking-Introduction](docs/09-Networking/01-Networking-Introduction.md)
   - [02-Pre-requisite-Switching-Routing-Gateways](docs/09-Networking/02-Pre-requisite-Switching-Routing-Gateways.md)
   - [03-Pre-requisite-DNS](docs/09-Networking/03-Pre-requisite-DNS.md)
@@ -188,9 +172,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [25-Practice-Test-CKA-Ingress-Net-2](docs/09-Networking/25-Practice-Test-CKA-Ingress-Net-2.md)
   - [26-Dowload-Presentation-Deck](docs/09-Networking/26-Dowload-Presentation-Deck.md)
 
-
 - [10-Design-and-Install-Kubernetes-Cluster](docs/10-Design-and-Install-Kubernetes-Cluster)
-
   - [01-Designing-a-Kubernetes-Cluster](docs/10-Design-and-Install-Kubernetes-Cluster/01-Designing-a-Kubernetes-Cluster.md)
   - [02-Choosing-Kubernetes-Infrastructure](docs/10-Design-and-Install-Kubernetes-Cluster/02-Choosing-Kubernetes-Infrastructure.md)
   - [03-Configure-High-Availability](docs/10-Design-and-Install-Kubernetes-Cluster/03-Configure-High-Availability.md)
@@ -199,7 +181,6 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [06-Download-Presentation-Deck](docs/10-Design-and-Install-Kubernetes-Cluster/06-Download-Presentation-Deck.md)
 
 - [11-Install-Kubernetes-the-kubeadm-way](docs/11-Install-Kubernetes-the-kubeadm-way)
-
   - [01-Introduction-to-Deployment-with-kubeadm](docs/11-Install-Kubernetes-the-kubeadm-way/01-Introduction-to-Deployment-with-kubeadm.md)
   - [02-Resources](docs/11-Install-Kubernetes-the-kubeadm-way/02-Resources.md)
   - [03-Provision-VMs-with-Vagrant](docs/11-Install-Kubernetes-the-kubeadm-way/03-Provision-VMs-with-Vagrant.md)
@@ -208,9 +189,7 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [BONUS 1 - Various kubeadm cluster configurations](./kubeadm-clusters) - Including for Apple M1/M2!
   - [BONUS 2 - Installing Managed Clusters in Cloud Playgrounds](./managed-clusters/)
 
-
 - [12-Troubleshooting](docs/12-Troubleshooting)
-
   - [01-Troubelshooting-Section-Introduction](docs/12-Troubleshooting/01-Troubelshooting-Section-Introduction.md)
   - [02-Application-Failure](docs/12-Troubleshooting/02-Application-Failure.md)
   - [03-Solution-Application-Failure](docs/12-Troubleshooting/03-Solution-Application-Failure.md)
@@ -223,21 +202,16 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
   - [10-Practice-Test-Troubleshoot-Network](docs/12-Troubleshooting/10-Practice-Test-Troubleshoot-Network.md)
 
 - [13-Other-Topics](docs/13-Other-Topics)
-
   - [01-Labs-JSON-PATH](docs/13-Other-Topics/01-Labs-JSON-PATH.md)
   - [02-Pre-Requisites-JSON-PATH](docs/13-Other-Topics/02-Pre-Requisites-JSON-PATH.md)
   - [03-Advance-Kubectl-Commands](docs/13-Other-Topics/03-Advance-Kubectl-Commands.md)
   - [04-Practice-Test-Advance-Kubectl-Commands](docs/13-Other-Topics/04-Practice-Test-Advance-Kubectl-Commands.md)
 
-
 - [14-Lightning-Labs](docs/14-Lightning-Labs)
-
   - [01-Lightning-Labs-Introduction](docs/14-Lightning-Labs/01-Lightning-Labs-Introduction.md)
   - [02-Lightning-Lab-1](docs/14-Lightning-Labs/02-Lightning-Lab-1.md)
 
-
 - [15-Mock-Exams](docs/15-Mock-Exams)
-
   - [01-Introduction](docs/15-Mock-Exams/01-Introduction.md)
   - [02-Mock-Exam-1](docs/15-Mock-Exams/02-Mock-Exam-1.md)
   - [03-Mock-Exam-2](docs/15-Mock-Exams/03-Mock-Exam-2.md)
@@ -250,4 +224,3 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
 - [17-Tips-and-Tricks](docs/17-tips-and-tricks/)
   - [01-Server for testing network policies](docs/17-tips-and-tricks/docs/01-server-for-testing-network-policies.md)
   - [02-Client-for-testing-network-things](docs/17-tips-and-tricks/docs/02-client--for-testing-network-things.md)
-

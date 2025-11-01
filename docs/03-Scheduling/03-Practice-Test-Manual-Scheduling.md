@@ -1,69 +1,71 @@
 # Practice Test - Manual Scheduling
-  - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-manual-scheduling/)
+
+- Take me to [Practice Test](https://kodekloud.com/topic/practice-test-manual-scheduling/)
 
 Solutions to Practice Test - Manual Scheduling
 
-1.  <details>
-    <summary>A pod definition file nginx.yaml is given. Create a pod using the file.</summary>
+1. <details>
+   <summary>A pod definition file nginx.yaml is given. Create a pod using the file.</summary>
 
-    ```
-    kubectl create -f nginx.yaml
-    ```
-    </details>
+   ```
+   kubectl create -f nginx.yaml
+   ```
 
-1.  <details>
-    <summary>What is the status of the created POD?</summary>
+   </details>
 
-    ```
-    kubectl get pods
-    ```
+1. <details>
+   <summary>What is the status of the created POD?</summary>
 
-    Examine the `STATUS` column
-    </details>
+   ```
+   kubectl get pods
+   ```
 
-1.  <details>
-    <summary>Why is the POD in a pending state?</br>Inspect the environment for various kubernetes control plane components.</summary>
+   Examine the `STATUS` column
+   </details>
 
-    ```
-    kubectl get pods --namespace kube-system
-    ```
+1. <details>
+   <summary>Why is the POD in a pending state?</br>Inspect the environment for various kubernetes control plane components.</summary>
 
-    There is a key pod missing here!
-    </details>
+   ```
+   kubectl get pods --namespace kube-system
+   ```
 
-1.  <details>
-    <summary>Manually schedule the pod on node01.</summary>
+   There is a key pod missing here!
+   </details>
 
-    We will have to delete and recereate the pod, as the only property that may be edited on a running container is `image`
+1. <details>
+   <summary>Manually schedule the pod on node01.</summary>
 
-    ```
-    vi nginx.yaml
-    ```
+   We will have to delete and recereate the pod, as the only property that may be edited on a running container is `image`
 
-    Make the following edit
+   ```
+   vi nginx.yaml
+   ```
 
-    ```yaml
-    ---
-    apiVersion: v1
-    kind: Pod
-    metadata:
-      name: nginx
-    spec:
-      nodeName: node01    # add this line
-      containers:
-      -  image: nginx
+   Make the following edit
+
+   ```yaml
+   ---
+   apiVersion: v1
+   kind: Pod
+   metadata:
+     name: nginx
+   spec:
+     nodeName: node01 # add this line
+     containers:
+       - image: nginx
          name: nginx
-    ```
+   ```
 
-    ```
-    kubectl delete -f nginx.yaml
-    kubectl create -f nginx.yaml
-    ```
-    </details>
+   ```
+   kubectl delete -f nginx.yaml
+   kubectl create -f nginx.yaml
+   ```
 
-1.  <details>
-    <summary>Now schedule the same pod on the controlplane node.</summary>
+   </details>
 
-    Repeat the steps as per the previous question. Edit `nodeName` to be `controlplane`
-  </details>
+1. <details>
+     <summary>Now schedule the same pod on the controlplane node.</summary>
 
+   Repeat the steps as per the previous question. Edit `nodeName` to be `controlplane`
+   </details>
