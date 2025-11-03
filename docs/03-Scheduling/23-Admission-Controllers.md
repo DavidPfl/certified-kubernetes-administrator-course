@@ -25,3 +25,7 @@ If you ever forget where the kube-apiserver.yaml is:
 `find ../ -name kube-apiserver.yaml`
 
 `../` is for the getting to the root, might have to be adjusted
+
+#### K8s Reference Docs
+
+<https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/>
