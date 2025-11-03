@@ -20,3 +20,8 @@ _The NamespaceExists controller is enabled by default an prevents requests to cr
 ## Enabling/Disabling Admission Controllers
 
 ![enable-disable-admission-controller](assets/enable-disable-admission-controller.png)
+Or use `kubectl exec -it kube-apiserver-controlplane -n kube-system -- kube-apiserver -h`.
+If you ever forget where the kube-apiserver.yaml is:
+`find ../ -name kube-apiserver.yaml`
+
+`../` is for the getting to the root, might have to be adjusted
