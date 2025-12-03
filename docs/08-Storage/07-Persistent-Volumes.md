@@ -1,6 +1,6 @@
 # Persistent Volumes
 
-  - Take me to [Lecture](https://kodekloud.com/topic/persistent-volumes-4/)
+- Take me to [Lecture](https://kodekloud.com/topic/persistent-volumes-4/)
 
 In this section, we will take a look at **Persistent Volumes**
 
@@ -9,12 +9,11 @@ In this section, we will take a look at **Persistent Volumes**
 
 ![class-16](../../images/class16.PNG)
 
-
 - A Persistent Volume is a cluster-wide pool of storage volumes configured by an administrator to be used by users deploying application on the cluster. The users can now select storage from this pool using Persistent Volume Claims.
 
   ```
   pv-definition.yaml
-  
+
   kind: PersistentVolume
   apiVersion: v1
   metadata:
@@ -24,7 +23,7 @@ In this section, we will take a look at **Persistent Volumes**
     capacity:
      storage: 1Gi
     hostPath:
-     path: /tmp/data
+     path: /tmp/data # not to be used in production
   ```
 
   ```
@@ -34,13 +33,12 @@ In this section, we will take a look at **Persistent Volumes**
   $ kubectl get pv
   NAME      CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS      CLAIM   STORAGECLASS   REASON   AGE
   pv-vol1   1Gi        RWO            Retain           Available                                   3min
-  
+
   $ kubectl delete pv pv-vol1
   persistentvolume "pv-vol1" deleted
   ```
 
 #### Kubernetes Persistent Volumes
 
-- https://kubernetes.io/docs/concepts/storage/persistent-volumes/
-- https://portworx.com/tutorial-kubernetes-persistent-volumes/
-
+- <https://kubernetes.io/docs/concepts/storage/persistent-volumes/>
+- <https://portworx.com/tutorial-kubernetes-persistent-volumes/>
