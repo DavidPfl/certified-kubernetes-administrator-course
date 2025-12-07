@@ -1,13 +1,12 @@
 # Service Networking
 
-  - Take me to [Lecture](https://kodekloud.com/topic/service-networking/)
+- Take me to [Lecture](https://kodekloud.com/topic/service-networking/)
 
 In this section, we will take a look at **Service Networking**
 
 ## Service Types
 
-- ClusterIP 
-
+- ClusterIP
 
 ```
 clusterIP.yaml
@@ -42,7 +41,7 @@ spec:
     app: nginx
 ```
 
-## To create the service 
+## To create the service
 
 ```
 $ kubectl create -f clusterIP.yaml
@@ -70,7 +69,7 @@ local-cluster   ClusterIP   10.101.67.139   <none>        80/TCP         3m
 nodeport-wide   NodePort    10.102.29.204   <none>        80:30016/TCP   2m
 ```
 
-## To check the Service Cluster IP Range 
+## To check the Service Cluster IP Range
 
 ```
 $ ps -aux | grep kube-apiserver
@@ -78,6 +77,20 @@ $ ps -aux | grep kube-apiserver
 service-cluster-ip-range=10.96.0.0/12
 
 ```
+
+**Or**
+`cat /etc/kubernetes/manifests/kube-apiserver.yaml`
+and look for the flag `--service-cluster-ip-range`
+
+## To check the IP Range assigned to Pods
+
+From Lab:
+
+> The network is configured with canal. Check the canal pods logs using the command kubectl logs <canal-pod-name> -n kube-system and look for default IPv4 pool range.
+
+**Or**
+
+Check the `kube-controller-manager.yaml` manifest file and look for the `--cluster-cidr` parameter, which defines the IP range assigned to Pods in the cluster.
 
 ## To check the rules created by kube-proxy in the iptables
 
@@ -90,16 +103,19 @@ KUBE-SVC-SDGXHD6P3SINP7QJ  tcp  --  anywhere             10.101.67.139        /*
 KUBE-SEP-GEKJR4UBUI5ONAYW  all  --  anywhere             anywhere             /* default/local-cluster: */
 ```
 
-## To check the logs of kube-proxy
+## To check the logs of kube-proxy (to see what typen of proxy is used forr example)
 
 - May this file location is vary depends on your installation process.
 
 ```
-$ cat /var/log/kube-proxy.log
+cat /var/log/kube-proxy.log
 
 ```
 
+**Or**
+`kubectl logs <name of kube-proxy Pod -n kube-system>`
 
 #### References Docs
 
-- https://kubernetes.io/docs/concepts/services-networking/service/
+- <https://kubernetes.io/docs/concepts/services-networking/service/>
+
